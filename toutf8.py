@@ -5,8 +5,8 @@ import encodings
 import re
 import sys
 
-if   len(sys.argv) is 1: filein,fileout = ("/dev/stdin", "/dev/stdout")
-elif len(sys.argv) is 2: filein,fileout = (sys.argv[1],  sys.argv[1])
+if   len(sys.argv) == 1: filein,fileout = ("/dev/stdin", "/dev/stdout")
+elif len(sys.argv) == 2: filein,fileout = (sys.argv[1],  sys.argv[1])
 else                   : filein,fileout = (sys.argv[1],  sys.argv[2])
 
 with open(filein, "rb") as f:
